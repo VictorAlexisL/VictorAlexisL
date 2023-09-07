@@ -1,3 +1,3 @@
 layout: page
 title: "Unclickable Button"
-permalink: /unclickableButtonPage
+permalink: /bora
