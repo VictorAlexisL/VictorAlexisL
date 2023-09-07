@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Casa comigo?</title>
+	<style>
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 90vh;
+		}
+
+		h1 {
+			margin-bottom: 20px;
+            		font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.button {
+			position: relative;
+			width: 100px;
+			height: 50px;
+			cursor: pointer;
+			padding: 5px;
+			margin-right: 10px;
+            		font-size: 20px;
+			background-color: ghostwhite;
+			border: solid gray 1px;
+			border-radius: 2px;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-tap-highlight-color: transparent;
+		}
+
+		.button:focus, button:hover, button:active {
+			background-color: ghostwhite!important;
+		}
+
+		.buttonInvisible {
+			position: relative;
+			width: 100px;
+			height: 50px;
+			cursor: pointer;
+			padding: 5px;
+			margin-right: 10px;
+           		font-size: 20px;
+			background-color: white;
+			color: white;
+			border: none;
+		}
+
+		.buttons-container {
+			display: flex;
+			flex-direction: row;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+		<div class="container"><h1>Casa comigo?</h1>
+			<div class="buttons-container">
+				<button id="myOtherButton" class="button">Sim</button>
+				<button id="unclickableButton" class="button">Não</button>
+			</div>
+		</div>
+	<script>
+		const button = document.getElementById("unclickableButton");
+
+		function changeButtonPosition() {
+			let newTop = Math.random() * (window.innerHeight - 100),
+			    newLeft = Math.random() * (window.innerWidth - 100);
+			button.style.top = newTop + "px";
+			button.style.left = newLeft + "px";
+			button.style.position = "fixed";
+			button.style.zIndex = 100;
+		}
+
+		function blinkTimer() {
+			return new Promise((resolve) => {
+				setTimeout(() => {
+					resolve('resolved');
+				}, 90);
+			});
+		}
+		
+		async function buttonTeleport() {
+			button.className = "buttonInvisible";
+			changeButtonPosition()
+			const wait = await blinkTimer();
+			button.className = "button";
+		}
+
+
+		button.addEventListener("mouseover", function() {
+			changeButtonPosition();
+		});
+
+		button.addEventListener("touchstart", function() {
+			buttonTeleport();
+		});
+
+		button.addEventListener("click", function() {
+			window.location.href = "https://www.youtube.com/watch?v=xaZfsypesSs";
+		});
+
+		const otherButton = document.getElementById("myOtherButton");
+
+		otherButton.addEventListener("click", function() {
+			window.location.href = "https://www.youtube.com/shorts/Dcd-a_KTTJg";
+		});
+	</script>
+</body>
+</html>
