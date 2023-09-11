@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>:
+      root {
+  --bgGrey: rgb(240,240,240);
+  --header: rgb(210,230,230)
+}
+
+body {
+  font-family: Arial;
+  font-size: 1.05em;
+  margin: 0;
+}
+
+h1 {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 0.5em;
+  background-color: var(--header);
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+#main-doc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  width: 98%;
+}
+
+p {
+  text-align: left;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--bgGrey);
+}
+
+.main-section {
+  text-align: left;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 0.3em;
+}
+
+.code-box {
+  text-align: left;
+  margin: auto;
+  display: table;
+  font-size: 1.3em;
+  background-color: var(--bgGrey);
+  padding: 0.3em;
+  width: 95%;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    display: flex;
+  }
+
+  #navbar {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+  }
+
+  #main-doc {
+    margin-left: 300px;
+    padding: 10px;
+    max-width: 90%;
+  }
+}
+    </style>
+    <title>JavaScript and Node.js</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header><h2>Navigation</h2></header>
+        <a class="nav-link" href="#Introduction_to_JavaScript_and_Node.js">Introduction to JavaScript and Node.js</a>
+        <a class="nav-link" href="#JavaScript_and_Node.js_Fundamentals">JavaScript and Node.js Fundamentals</a>
+        <a class="nav-link" href="#Differences_Between_JavaScript_and_Node.js">Differences Between JavaScript and Node.js</a>
+        <a class="nav-link" href="#Relationship_and_Interaction">Relationship and Interaction</a>
+        <a class="nav-link" href="#Conclusion">Conclusion</a>
+    </nav>
+    <main id="main-doc">
+        <h1>Understanding JavaScript and Node.js</h1>
+        <section class="main-section" id="Introduction_to_JavaScript_and_Node.js">
+            <header>
+                <h2>Introduction to JavaScript and Node.js</h2>
+            </header>
+            <p>JavaScript and Node.js are both crucial technologies in the realm of web development. JavaScript is a versatile programming language primarily used for creating interactive and dynamic web content on the client-side. It enables developers to add functionalities like form validation, animations, and user interactivity directly within web browsers. Node.js, on the other hand, is a runtime environment that allows developers to execute JavaScript code on the server-side. It is built on the V8 JavaScript engine and provides a way to develop scalable and efficient server-side applications.</p>
+        </section>
+        <section class="main-section" id="JavaScript_and_Node.js_Fundamentals">
+            <header>
+                <h2>JavaScript and Node.js Fundamentals</h2>
+            </header>
+            <p>JavaScript is a high-level, interpreted scripting language. It's primarily used in web browsers to enhance user experiences. Developers use JavaScript to manipulate the Document Object Model (DOM) of web pages, making elements dynamically change or respond to user actions. Here's a simple example of changing text on a button click:</p>
+            <code class="code-box">
+<pre>// JavaScript code
+
+    const button = document.querySelector('#myButton');
+    button.addEventListener('click', () => {
+        button.textContent = 'Clicked!';
+        });</pre>
+            </code>
+            <p>Node.js, built on Chrome's V8 engine, allows JavaScript to be executed on the server-side. It's commonly used to create web servers, APIs, and other networked applications. One of Node.js's standout features is its non-blocking, event-driven architecture, which enables asynchronous programming. Below is a basic Node.js server example:</p>
+            <code class="code-box">
+<pre>// Node.js code
+    const http = require('http');
+    const server = http.createServer((req, res) => {
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'text/plain');
+        res.end('Hello from Node.js!');
+        });
+        
+        server.listen(3000, 'localhost', () => {
+            console.log('Server listening on port 3000');
+        });</pre></code>
+        </section>
+        <section class="main-section" id="Differences_Between_JavaScript_and_Node.js">
+            <header>
+                <h2>Differences Between JavaScript and Node.js</h2>
+            </header>
+            <p>The primary distinction between JavaScript and Node.js lies in their execution environments. JavaScript runs in web browsers and is used to create client-side interactivity. Node.js, however, operates on the server-side. Additionally, while JavaScript in browsers has access to the DOM, Node.js has a different set of APIs for file system manipulation, networking, and more.</p>
+            <p>There is also a difference in handling input in JavaScript running on a browser vs Node.js.</p>
+            <p>JavaScript on the web browser employs the prompt() and alert() functions to interact with users through dialog boxes. It uses prompt() to collect user input and alert() to display outputs.</p>
+            <code class="code-box">
+                //Requesting input in JavaScript running on a web browser
+                let drink = prompt("What would you like to drink?");
+                drink = drink.toLowerCase();
+                alert("Here is your " + drink + "!")
+            </code>
+            <p>In contrast, Node.js employs the readline module to create a command-line interface, where users provide input through the console.</p>
+            <code class="code-box">
+                //Requesting input on Node.js
+                const readline = require('readline');
+                const rl = readline.createInterface({
+                    input: process.stdin,
+                    output: process.stdout
+                });
+                function getDrink() {
+                    rl.question("What would you like to drink?", (choice) => {
+                        const drink = choice.toLowerCase();
+                        console.log("Here is your " + drink + "");
+                        rl.close();
+                    });
+                }
+                getDrink();
+            </code>
+            <p>The differences in the code demonstrate how these differing environments influence the method of interaction and the functions used for input and output.</p>
+        </section>
+        <section class="main-section" id="Relationship_and_Interaction">
+            <header>
+                <h2>Relationship and Interaction</h2>
+            </header>
+            <p>JavaScript and Node.js are closely related, as Node.js allows developers to use JavaScript on the server. Code can be shared between the two environments, such as utility functions or validation logic. However, there are differences in available APIs; for instance, browser-specific features are absent in Node.js. The fs module in Node.js enables server-side file operations:</p>
+            <code class="code-box">
+                // Node.js file system code
+                const fs = require('fs');
+                fs.readFile('data.txt', 'utf-8', (err, data) => {
+                    if (err) throw err;
+                    console.log(data);
+                });
+            </code>
+        </section>
+        <section class="main-section" id="Conclusion">
+            <header>
+                <h2>Conclusion</h2>
+            </header>
+            <p>In conclusion, JavaScript and Node.js are pivotal components in modern web development, each serving distinct roles while maintaining a symbiotic relationship. To summarize their differences:</p>
+            <ul>
+                <li><strong>Execution Context: </strong>JavaScript operates within web browsers to enable dynamic client-side interactions, while Node.js executes JavaScript code on the server-side.</li>
+                <li><strong>DOM Interaction: </strong>JavaScript in browsers wields the power to manipulate the Document Object Model (DOM), facilitating real-time webpage changes. In contrast, Node.js lacks direct DOM access.</li>
+                <li><strong>Asynchronous Nature: </strong>Node.js adopts an event-driven, non-blocking architecture that excels in handling concurrent connections and asynchronous tasks.</li>
+                <li><strong>Server-side Capabilities: </strong>Node.js extends JavaScript's capabilities to the server, providing modules for file system operations, networking, and more, which are absent in browser-based JavaScript.</li>
+                <li><strong>Code Sharing: </strong>Developers can share code between JavaScript in browsers and Node.js on servers, streamlining development and fostering code reuse.</li>
+            </ul>
+            <p>Understanding these differences is essential for leveraging the strengths of JavaScript and Node.js to craft seamless and efficient web applications.</p>
+        </section>
+    </main>
+</body>
+</html>
