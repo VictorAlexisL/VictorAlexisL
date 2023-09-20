@@ -12,6 +12,15 @@
         margin: 0 0 0 0;
     }
     
+    .nav-link {
+      color: lightgray!important;
+    }
+    
+    a:hover {
+      color: gray!important;
+      background-color: rgba(red, green, blue, 0.2);
+    }
+
     main {
         margin: 5px;
     }
@@ -92,9 +101,9 @@
     <main>
         <header id="welcome-section">
             <h1>Victor Alexis Lopes</h1>
-            <p id="welcome">Olá! Boas vindas ao meu portfolio. :)</p>
+            <p id="welcome">Olá! Boas vindas ao meu portfolio!</p>
             <p>Me chamo Victor, tenho 23 anos. Trabalho na Teleperformance e sou trainer do time de vendas da Google Cloud LATAM para pequenas e médias empresas. Tenho 2 anos de experiência com L&D.</p>
-            <p>Sou estudante de Análise e Desenvolvimento de Sistemas pela Descomplica. Decidi estudar programação porque me apaixonei pelo tema trabalhando com cloud!
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas pela Descomplica. Decidi estudar programação porque me apaixonei pelo tema trabalhando com cloud.</p>
             <p>Fato curioso: troquei de curso recentemente, antes eu cursava licenciatura em Física na USP!</p>
             <p>Veja alguns dos meus projetos nas seções abaixo.</p>
         </header>
@@ -114,17 +123,35 @@
             <h2>Outras atividades</h2>
             <p>Sou bastante estudioso, faços cursos por fora e uso o Cloud Skillsboost e o FreeCodeCamp para praticar.</p>
             <p>Veja o que eu fiz recentemente:</p>
-            <ul>
-                <li><a target="_blank" href="https://www.cloudskillsboost.google/public_profiles/2378fd73-e0e5-4b95-9ca1-0c83b2e3126c">Google Cloud Skillsboost</a></li>
-                <li><a target="_blank" href="https://www.freecodecamp.org/VictorAlexisL">FreeCodeCamp</a></li>
-            </ul>
+            
+            <details>
+              <summary><a target="_blank" href="https://www.cloudskillsboost.google/public_profiles/2378fd73-e0e5-4b95-9ca1-0c83b2e3126c">Google Cloud Skillsboost</a></summary>
+                <p>Estou estudando bastante sobre computação na nuvem, tanto para me ajudar no trabalho quanto para no futuro lançar minhas próprias aplicações de forma fácil, ágil e escalável!</p>
+              </details>
+            <details>
+              <summary><a target="_blank" href="https://www.freecodecamp.org/VictorAlexisL">FreeCodeCamp</a></summary>
+              <p>O FreeCodeCamp é uma plataforma gratuita para aprender e práticar código. Alguns dos meus projetos acima são projetos para as certificações de Responsive Web Design do FreeCodeCamp</p>
+            </details>
+            <details>
+              <summary>Outras certificações</summary>
+              <ul>
+                <li><a href="https://coursera.org/share/7cd80080027e93e9e56d645969938b69" target="_blank">AWS Cloud Practitioner Essentials</a> via Amazon - Setembro de 2023</li>
+                <li><a href="https://coursera.org/share/a803aacf9493a6284c37285b81d355a1" target="_blank">Sales Training for High Performing Teams</a> via HubSpot Academy - Agosto de 2023</li>
+              <!--
+                <li><a href="https://ead.fm2s.com.br/certificado/275807" target="_blank">Inteligência Emocional</a> via FM2S - Setembro de 2023</a></li>
+                <li><a href="https://www.efset.org/cert/1iCVLp" target="_blank">C2 English Proficiency</a> via EF Set - Setembro de 2023</li>
+              -->
+              </ul>
+            </details>
         </section>
+        <br>
         <section id="contact">
             <h2>Entre em contato comigo</h2>
             <ul>
                 <li><a target="_blank" id="linkedin-link" href="https://www.linkedin.com/in/victor-alexis-lopes/">LinkedIn</a></li>
                 <li><a target="_blank" id="profile-link" href="https://github.com/VictorAlexisL">GitHub</a></li>
             </ul>
+            <br>
         </section>
       </div>
     </main>
