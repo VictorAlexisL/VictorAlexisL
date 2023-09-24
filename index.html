@@ -72,11 +72,12 @@
           display: flex;
           justify-content: center;
           max-width: 800px;
+          margin: auto;
         }
 
         #welcome-section {
-            max-width: 900px
-            margin: auto
+            max-width: 900px;
+            margin: 80px auto auto auto;
         }
         
         section {
@@ -90,37 +91,52 @@
     <nav id="navbar" class="navbar navbar-expand-sm bg-dark color-light">
       <a href="#welcome-section" class="nav-link">Sobre mim</a>
       <a href="#projects" class="nav-link">Projetos</a>
+      <a href="#certifications" class="nav-link">Certificados</a>
       <a href="#otherActivities" class="nav-link">Outras atividades</a>
       <a href="#contact" class="nav-link">Contato</a>
     </nav>
 
-    <div id="img-div">
-      <img src="https://storage.googleapis.com/victorlopes_portfolio/victor1.jpg">
-      <img src="https://storage.googleapis.com/victorlopes_portfolio/victor3.png">
-      <img src="https://storage.googleapis.com/victorlopes_portfolio/victor2.jpg">
-    </div>
-
     <main>
         <header id="welcome-section">
             <h1>Victor Alexis Lopes</h1>
-            <p id="welcome">Olá! Boas vindas ao meu portfolio!</p>
+            <p>Olá! Boas vindas ao meu portfolio!</p>
+
+            <div id="img-div">
+              <img src="https://storage.googleapis.com/victorlopes_portfolio/victor1.jpg">
+              <img src="https://storage.googleapis.com/victorlopes_portfolio/victor3.png">
+              <img src="https://storage.googleapis.com/victorlopes_portfolio/victor2.jpg">
+            </div>
+
             <p>Me chamo Victor, tenho 23 anos. Trabalho na Teleperformance e sou trainer do time de vendas da Google Cloud LATAM para pequenas e médias empresas. Tenho 2 anos de experiência com L&D.</p>
-            <p>Sou estudante de Análise e Desenvolvimento de Sistemas pela Descomplica. Decidi estudar programação porque me apaixonei pelo tema trabalhando com cloud.</p>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas pela Descomplica. Decidi mudar de carreira porque me apaixonei pela área de tecnologia trabalhando com cloud!</p>
+            <p>Tenho experiência com projetos em HTML, CSS, JavaScript e Bootstrap, usados para fazer este site e também com Python e Flask. Os projetos em Python ainda não foram adicionados ao portfolio, mas em breve estarão!</p>
             <p>Fato curioso: troquei de curso recentemente, antes eu cursava licenciatura em Física na USP!</p>
+          
             <p>Veja alguns dos meus projetos nas seções abaixo.</p>
         </header>
       <div id="content">
         <section id="projects">
             <h2>Projetos mais recentes</h2>
             <ul>
-                <li class="project-tile"><a target="_blank" href="https://victoralexisl.github.io/VictorAlexisL/bora">Botão inclicável</a></li>
+                <li class="project-tile"><a target="_blank" href="https://victoralexisl.github.io/VictorAlexisL/mecontrata">Botão inclicável</a></li>
                 <li class="project-tile"><a target="_blank" href="https://victoralexisl.github.io/VictorAlexisL/descomplicaAtividadeFinal">Registro de funcionários</a></li>
                 <li class="project-tile"><a target="_blank" href="https://storage.googleapis.com/victorlopes_portfolio/surveyForm.html">Formulário de Inscrição</a></li>
                 <li class="project-tile"><a  target="_blank" href="https://storage.googleapis.com/victorlopes_portfolio/alanturing/Alan%20Turing.html">Tributo a Alan Turing</a></li>
                 <li class="project-tile"><a target="_blank" href="https://storage.googleapis.com/victorlopes_portfolio/FCC_TechnicalDocumentation.html">Introdução a Node.js vs JavaScript</a></li>
             </ul>
         </section>
-        <section>
+        <section id="certifications">
+          <h2>Certificados</h2>
+          <ul>
+            <li><a href="https://coursera.org/share/7cd80080027e93e9e56d645969938b69" target="_blank">
+              AWS Cloud Practitioner Essentials</a> via Amazon - Setembro de 2023</li>
+            <li><a href="https://freecodecamp.org/certification/VictorAlexisL/responsive-web-design" target="_blank">
+              Responsive Web Design</a> via FreeCodeCamp - Setembro de 2023</a></li>
+            <li><a href="https://certificados.descomplica.com.br/graduacao/b638b208821e98700795d58bd1a3ca76890d2b3e8a11054af3cc7b1a7083643d" target="_blank">
+              Basic FrontEnd</a> via Descomplica Faculdade Digital - Setembro de 2023</li>
+          </ul>
+
+        </section>
         <section id="otherActivities">
             <h2>Outras atividades</h2>
             <p>Sou bastante estudioso, faços cursos por fora e uso o Cloud Skillsboost e o FreeCodeCamp para praticar.</p>
@@ -137,12 +153,10 @@
             <details>
               <summary>Outras certificações</summary>
               <ul>
-                <li><a href="https://coursera.org/share/7cd80080027e93e9e56d645969938b69" target="_blank">AWS Cloud Practitioner Essentials</a> via Amazon - Setembro de 2023</li>
-                <li><a href="https://coursera.org/share/a803aacf9493a6284c37285b81d355a1" target="_blank">Sales Training for High Performing Teams</a> via HubSpot Academy - Agosto de 2023</li>
-              <!--
-                <li><a href="https://ead.fm2s.com.br/certificado/275807" target="_blank">Inteligência Emocional</a> via FM2S - Setembro de 2023</a></li>
-                <li><a href="https://www.efset.org/cert/1iCVLp" target="_blank">C2 English Proficiency</a> via EF Set - Setembro de 2023</li>
-              -->
+                <li><a href="https://www.efset.org/cert/1iCVLp" target="_blank">
+                  C2 English Proficiency</a> via EF Set - Setembro de 2023</li>
+                <li><a href="https://coursera.org/share/a803aacf9493a6284c37285b81d355a1" target="_blank">
+                  Sales Training for High Performing Teams</a> via HubSpot Academy - Agosto de 2023</li>
               </ul>
             </details>
         </section>
@@ -152,10 +166,17 @@
             <ul>
                 <li><a target="_blank" id="linkedin-link" href="https://www.linkedin.com/in/victor-alexis-lopes/">LinkedIn</a></li>
                 <li><a target="_blank" id="profile-link" href="https://github.com/VictorAlexisL">GitHub</a></li>
+                <li><a target="blank" id="email-link" href="mailto:victoralexislopes@gmail.com" onclick="showEmail()">E-mail</a></li>
             </ul>
             <br>
         </section>
       </div>
     </main>
+
+    <script>
+      function showEmail() {
+        document.getElementById("email-link").innerHTML = "E-mail: victoralexislopes@gmail.com"
+      }
+    </script>
 </body>
 </html>
