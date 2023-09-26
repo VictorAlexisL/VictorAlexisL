@@ -9,10 +9,10 @@ class Character:
         self.strength = 10
         self.intelligence = 10
         self.dexterity = 10
-        print(self.name)
         character_list.append(self.name)
+        return f"Character created: {self.name}"
 
-    def get_exp(self):
+    def gain_exp(self):
         import random
         self.exp += random.randint(1,100)
         if self.exp >= 100:
@@ -39,7 +39,7 @@ class Character:
         print(f"Level Up! Current level: {self.level}")
         return self.level
     
-    def debug(self):
+    def generate_lvl5_stats(self):
         while self.level < 5:
             Character.get_exp(self)
         print(self.strength)
@@ -50,6 +50,6 @@ class Character:
     
 merlin = Character("Merlin", "Wizard")
 
-Character.debug(merlin)
+Character.generate_lvl5_stats(merlin)
 
 print(character_list)
