@@ -1,128 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor Lopes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-    
-    body {
-        font-family: "Lato";
-        margin: 0 0 0 0;
-    }
-    
-    .nav-link {
-      color: lightgray!important;
-    }
-    
-    a:hover {
-      color: gray!important;
-      background-color: rgba(red, green, blue, 0.2);
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Lopes</title>
+  <link rel="icon" href="./images/favicon.ico" />
+  <style>
+      html {
+  scroll-behavior: smooth;
+}
 
-    main {
-        margin: 5px;
-    }
+body {
+  font-size: ;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  background-image: url(./images/code.jpeg);
+  background-size: cover;
+  color: white;
+}
 
-    #navbar {
-        position: sticky;
-        top: 0;
-        left: 0;
-        padding: 0.5em;
-        background-color: black;
-        margin: 0 0 0 0;
-        z-index: 100;
-        }
+a {
+  color: rgb(90, 100, 255);
+}
 
-        
-    #img-div {
-      display: none;
-    }
+#content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
 
-      img {
-        margin: 10px;
-        padding: 2px;
-        height: 300px;
-        width: 200px;
-        max-width: 100%;
-        border: solid 1px black;
-        border-radius: 10px;
-        text-align: center;
-      }
+section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 60%;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
 
-     @media screen and (min-width: 600px) {
-         h1, #welcome {
-             text-align: center;
-             }
+#navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(20,20,20);
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+}
 
-        body {
-          text-align: center;
-          margin: auto;
-          font-size: 1.1em;
-        }
+.nav-link {
+  padding: 10px;
+  font-size: large;
+  position: relative;
+  text-decoration: none;
+} 
 
-        #content {
-          display: flex column;
-          margin: auto;
-          max-width: 700px;
-        }
+.nav-link:hover {
+  background-color: rgb(50,50,50);
+}
 
-        #img-div {
-          display: flex;
-          justify-content: center;
-          max-width: 800px;
-          margin: auto;
-        }
+.nav-link:active {
+  background-color: black;
+}
 
-        #welcome-section {
-            max-width: 900px;
-            margin: 80px auto auto auto;
-        }
-        
-        section {
-            text-align: left;
-        }
+ul {
+  list-style-type: none
+}
 
-        .break {
-            display: none;
-      }
 
-      </style>
-    </head>
+@media only screen and (max-width: 520px) {
+  #navbar {
+    display: none;
+  }
+  main {
+    margin: auto;
+  }
+}
+  </style>
+</head>
 <body>
-    <nav id="navbar" class="navbar navbar-expand-sm bg-dark color-light">
-      <a href="#welcome-section" class="nav-link">Sobre mim</a>
+    <nav id="navbar">
+      <a href="#header" class="nav-link">Sobre mim</a>
       <a href="#projects" class="nav-link">Projetos</a>
       <a href="#certifications" class="nav-link">Certificados</a>
       <a href="#otherActivities" class="nav-link">Outras atividades</a>
-      <a href="#contact" class="nav-link">Contato</a>
+      <a target="_blank" class="nav-link" id="linkedin-link" href="https://www.linkedin.com/in/victor-alexis-lopes/">LinkedIn</a>    
+      <a target="_blank" class="nav-link" id="github-link" href="https://github.com/VictorAlexisL">GitHub</a>
     </nav>
-
     <main>
-        <header id="welcome-section">
-            <br><br><br>
-            <div class="break"><br><br></div>
-            <h1>Victor Alexis Lopes</h1>
-            <p>Olá! Boas vindas ao meu portfolio!</p>
-
-            <div id="img-div">
-              <img src="https://storage.googleapis.com/victorlopes_portfolio/victor1.jpg">
-              <img src="https://storage.googleapis.com/victorlopes_portfolio/victor3.png">
-              <img src="https://storage.googleapis.com/victorlopes_portfolio/victor2.jpg">
-            </div>
-
-            <p>Me chamo Victor, tenho 23 anos. Trabalho na Teleperformance e sou trainer do time de vendas da Google Cloud LATAM para pequenas e médias empresas. Tenho 2 anos de experiência com L&D.</p>
-            <p>Sou estudante de Análise e Desenvolvimento de Sistemas pela Descomplica. Decidi mudar de carreira porque me apaixonei pela área de tecnologia trabalhando com cloud!</p>
-            <p>Tenho experiência com projetos em HTML, CSS, JavaScript e Bootstrap, usados para fazer este site, e também com Python e Flask.</p>
-            <p>Fato curioso: troquei de curso recentemente, antes eu cursava licenciatura em Física na USP!</p>
-          
-            <p>Veja alguns dos meus projetos nas seções abaixo.</p>
-        </header>
       <div id="content">
+        <section id="header" class="content">
+          <h1>Victor Alexis Lopes</h1>
+          <p>Olá! Boas vindas ao meu portfolio!</p>
+          <p>Me chamo Victor, tenho 23 anos. Trabalho na Teleperformance e sou trainer do time de vendas da Google Cloud LATAM para pequenas e médias empresas. Tenho 2 anos de experiência com L&D.</p>            <p>Sou estudante de Análise e Desenvolvimento de Sistemas pela Descomplica. Decidi mudar de carreira porque me apaixonei pela área de tecnologia trabalhando com cloud!</p>
+          <p>Tenho experiência com projetos em HTML, CSS, JavaScript e Bootstrap, usados para fazer este site, e também com Python e Flask.</p>
+          <p>Fato curioso: troquei de curso recentemente, antes eu cursava licenciatura em Física na USP!</p>  
+          <p>Veja alguns dos meus projetos nas seções abaixo.</p>
+        </section>
         <section id="projects">
-            <br><br><br>
-            <div class="break"><br><br></div>
             <h2>Projetos mais recentes</h2>
             <ul>
                 <li class="project-tile"><a target="_blank" href="https://mythic-emissary-396917.uc.r.appspot.com">Gerador de personagem de RPG</a> - Python e Flask em AppEngine</li>                
@@ -133,56 +112,53 @@
             </ul>
         </section>
         <section id="certifications">
-          <br><br><br>
           <h2>Certificados</h2>
-          <ul>
-            <li><a href="https://coursera.org/share/7cd80080027e93e9e56d645969938b69" target="_blank">
-              AWS Cloud Practitioner Essentials</a> via Amazon - Setembro de 2023</li>
-            <li><a href="https://www.cloudskillsboost.google/public_profiles/2378fd73-e0e5-4b95-9ca1-0c83b2e3126c/badges/5350638">Google Developer Essentials</a> via Google - Setembro de 2023</li>
-            <li><a href="https://www.dio.me/certificate/3FD28087">Programação do Zero</a> via Potência Tech iFood - Setembro de 2023</li>
-              <li><a href="https://freecodecamp.org/certification/VictorAlexisL/responsive-web-design" target="_blank">
-              Responsive Web Design</a> via FreeCodeCamp - Setembro de 2023</a></li>
-            <li><a href="https://certificados.descomplica.com.br/graduacao/b638b208821e98700795d58bd1a3ca76890d2b3e8a11054af3cc7b1a7083643d" target="_blank">
-              Basic FrontEnd</a> via Descomplica Faculdade Digital - Setembro de 2023</li>
-          </ul>
-
+          <div>
+            <ul>
+              <li><a href="https://coursera.org/share/7cd80080027e93e9e56d645969938b69" target="_blank">
+                AWS Cloud Practitioner Essentials</a> via Amazon - Setembro de 2023</li>
+              <li><a href="https://www.cloudskillsboost.google/public_profiles/2378fd73-e0e5-4b95-9ca1-0c83b2e3126c/badges/5350638">Google Developer Essentials</a> via Google - Setembro de 2023</li>
+              <li><a href="https://www.dio.me/certificate/3FD28087">Programação do Zero</a> via Potência Tech iFood - Setembro de 2023</li>
+                <li><a href="https://freecodecamp.org/certification/VictorAlexisL/responsive-web-design" target="_blank">
+                Responsive Web Design</a> via FreeCodeCamp - Setembro de 2023</a></li>
+              <li><a href="https://certificados.descomplica.com.br/graduacao/b638b208821e98700795d58bd1a3ca76890d2b3e8a11054af3cc7b1a7083643d" target="_blank">
+                Basic FrontEnd</a> via Descomplica Faculdade Digital - Setembro de 2023</li>
+            </ul>
+          </div>
         </section>
         <section id="otherActivities">
-            <br><br><br>
-            <div class="break"><br><br></div>
             <h2>Outras atividades</h2>
-            <p>Sou bastante estudioso, faços cursos por fora e uso o Cloud Skillsboost e o FreeCodeCamp para praticar.</p>
-            <p>Veja o que eu fiz recentemente:</p>
-            
-            <details>
-              <summary><a target="_blank" href="https://www.cloudskillsboost.google/public_profiles/2378fd73-e0e5-4b95-9ca1-0c83b2e3126c">Google Cloud Skillsboost</a></summary>
-                <p>Estou estudando bastante sobre computação na nuvem, tanto para me ajudar no trabalho quanto para no futuro lançar minhas próprias aplicações de forma fácil, ágil e escalável!</p>
+            <div>
+              <p>Praticar e adquirir novos conhecimentos é essencial. Aqui estão algumas outras plataformas e cursos que fiz recentemente.</p>
+              <p>Veja o que eu fiz recentemente:</p>        
+              <details>
+                <summary><a target="_blank" href="https://www.cloudskillsboost.google/public_profiles/2378fd73-e0e5-4b95-9ca1-0c83b2e3126c">Google Cloud Skillsboost</a></summary>
+                  <p>Estou estudando bastante sobre computação na nuvem, tanto para me ajudar no trabalho quanto para no futuro lançar minhas próprias aplicações de forma fácil, ágil e escalável!</p>
+                </details>
+              <details>
+                <summary><a target="_blank" href="https://www.freecodecamp.org/VictorAlexisL">FreeCodeCamp</a></summary>
+                <p>O FreeCodeCamp é uma plataforma gratuita para aprender e práticar código. Alguns dos meus projetos acima são projetos para as certificações de Responsive Web Design do FreeCodeCamp</p>
               </details>
-            <details>
-              <summary><a target="_blank" href="https://www.freecodecamp.org/VictorAlexisL">FreeCodeCamp</a></summary>
-              <p>O FreeCodeCamp é uma plataforma gratuita para aprender e práticar código. Alguns dos meus projetos acima são projetos para as certificações de Responsive Web Design do FreeCodeCamp</p>
-            </details>
-            <details>
-              <summary>Outras certificações</summary>
-              <ul>
-                <li><a href="https://www.efset.org/cert/1iCVLp" target="_blank">
-                  C2 English Proficiency</a> via EF Set - Setembro de 2023</li>
-                <li><a href="https://coursera.org/share/a803aacf9493a6284c37285b81d355a1" target="_blank">
-                  Sales Training for High Performing Teams</a> via HubSpot Academy - Agosto de 2023</li>
-              </ul>
-            </details>
-        </section>
-        <br>
+              <details>
+                <summary>Outras certificações</summary>
+                <ul>
+                  <li><a href="https://www.efset.org/cert/1iCVLp" target="_blank">
+                    C2 English Proficiency</a> via EF Set - Setembro de 2023</li>
+                  <li><a href="https://coursera.org/share/a803aacf9493a6284c37285b81d355a1" target="_blank">
+                    Sales Training for High Performing Teams</a> via HubSpot Academy - Agosto de 2023</li>
+                </ul>
+              </details>
+            </div>
+          </section>
         <section id="contact">
-            <br><br><br>
-            <div class="break"><br><br></div>
             <h2>Entre em contato comigo</h2>
             <ul>
-                <li><a target="_blank" id="linkedin-link" href="https://www.linkedin.com/in/victor-alexis-lopes/">LinkedIn</a></li>
-                <li><a target="_blank" id="profile-link" href="https://github.com/VictorAlexisL">GitHub</a></li>
-                <li><a target="blank" id="email-link" href="mailto:victoralexislopes@gmail.com" onclick="showEmail()">E-mail</a></li>
+              <li><a target="_blank" class="contact-link" href="https://www.linkedin.com/in/victor-alexis-lopes/">LinkedIn</a></li>
+              <li><a target="_blank" class="contact-link" href="https://github.com/VictorAlexisL">GitHub</a></li>
+              <li><a target="blank" class="contact-link" href="mailto:victoralexislopes@gmail.com" onclick="showEmail()">
+                E-mail
+              </a></li>
             </ul>
-            <br>
         </section>
       </div>
     </main>
