@@ -11,4 +11,4 @@ GCP Trainer na Teleperformance e estudante de Análise e Desenvolvimento de Sist
  ![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript) ![HTML](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5) ![CSS](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=264CE4) ![GCP](https://img.shields.io/badge/-GCP-000000?style=for-the-badge) ![AWS](https://img.shields.io/badge/-AWS-000000?style=for-the-badge)
 
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/victor-alexis-lopes/) [![Instagram](https://img.shields.io/badge/Instagram-000?style=for-the-badge&logo=instagram)](https://www.instagram.com/victor.alexis0//)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/victor-alexis-lopes/) [![Instagram](https://img.shields.io/badge/Instagram-000?style=for-the-badge&logo=instagram)](https://www.instagram.com/victor.alexis0/)
