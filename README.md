@@ -1,5 +1,5 @@
 # Victor Alexis
-[![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-000000?style=for-the-badge)](https://web.dio.me/users/victoralexislopes) [![Meu Portifólio](https://img.shields.io/badge/-Meu%20Portfolio-000000?style=for-the-badge)](https://https://victoralexisl.github.io/VictorAlexisL/)
+[![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-000000?style=for-the-badge)](https://web.dio.me/users/victoralexislopes) [![Meu Portifólio](https://img.shields.io/badge/-Meu%20Portifólio-000000?style=for-the-badge)](https://https://victoralexisl.github.io/VictorAlexisL/)
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=VictorAlexisL&theme=bear&background=000&border=30A3DC&dates=FFF)](https://git.io/streak-stats)
 
