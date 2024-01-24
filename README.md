@@ -1,11 +1,9 @@
 # Victor Alexis
-[![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-000000?style=for-the-badge)](https://web.dio.me/users/victoralexislopes) [![Meu Portifólio](https://img.shields.io/badge/-Meu%20Portifólio-000000?style=for-the-badge)](https://https://victoralexisl.github.io/VictorAlexisL/)
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=VictorAlexisL&theme=bear&background=000&border=30A3DC&dates=FFF)](https://git.io/streak-stats)
+[![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-000000?style=for-the-badge)](https://web.dio.me/users/victoralexislopes) 
 
 ## Sobre mim
 
-GCP Trainer na Teleperformance e estudante de Análise e Desenvolvimento de Sistemas na Descomplica.
+Estagiário de Engenharia de Software na Gupy e estudante de Análise e Desenvolvimento de Sistemas na Descomplica.
 
 ![Python](https://img.shields.io/badge/Python-000?style=for-the-badge&logo=python)
  ![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript) ![HTML](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5) ![CSS](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=264CE4) ![GCP](https://img.shields.io/badge/-GCP-000000?style=for-the-badge) ![AWS](https://img.shields.io/badge/-AWS-000000?style=for-the-badge)
